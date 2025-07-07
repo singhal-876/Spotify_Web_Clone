@@ -1,0 +1,670 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+    color: white;
+}
+
+header{
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+    top: 0;
+}
+
+.navbar{
+    height: 4.5rem;
+    width: 100%;
+    background-color: #000;
+}
+
+.logo img{
+    border-radius: 50%;
+    height: 3rem;
+    margin: 0rem 1rem 1rem;
+}
+
+.home{
+    display: flex;
+    height: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.home-icon {
+    background-color: #2a2a2a;
+    border-radius: 50%;
+    height: 3.5rem;
+    width: 3.5rem;
+    opacity: 0.7;
+}
+
+.home-icon i{
+    font-size: 2rem;
+    margin: 0.6rem;
+}
+
+.searchbar {
+    display: flex;
+    background-color: #2a2a2a;
+    border-radius: 30px;
+    height: 3rem;
+    width: 27rem;
+    margin: 0.2rem 22rem 0.2rem 1rem;
+    opacity: 0.7;
+}
+
+.searchbar .search{
+    font-size: 2rem;
+    margin: 0.6rem;
+}
+
+.searchbar p{
+    display: flex;
+    font-size: 1rem;
+    margin-top: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.searchbar .browse {
+    display: flex;
+    font-size: 2rem;
+    margin: 0.6rem 0rem 0rem 7rem;
+    opacity: 0.7;
+}
+
+.rem{
+    display: flex;
+    align-items: center;
+    margin: 0rem 1rem 1rem;
+}
+
+.rem-items{
+    margin-right: 0.7rem;
+    opacity: 0.7;
+    font-weight: 650;
+}
+
+.vline{
+    margin: 0rem 0.5rem;
+}
+
+.rem-items2{
+    display: flex;
+    font-size: 0.9rem;
+    margin: 1rem 0.7rem 0rem;
+    font-weight: 650;
+    opacity: 0.7;
+}
+
+.signup{
+    display: flex;
+    font-size: 0.9rem;
+    margin: 0rem 0.7rem;
+    font-weight: 650;
+    opacity: 0.7;
+}
+
+.rem-items2 i{
+    font-size: 1rem;
+    margin: 0rem 0.5rem;
+}
+
+.rem button{
+    border-radius: 30px;
+    font-weight: 650;
+    height: 2.7rem;
+    width: 6rem;
+    opacity: 1;
+}
+
+.home-icon:hover,
+.searchbar .browse:hover,
+.rem-items:hover,
+.rem-items2:hover,
+.signup:hover,
+.rem button:hover{
+    transition: 0.1s ease-in;
+    transform: scale(1.1);  
+    opacity: 1;  
+}
+    
+@media (max-width: 1600px) {
+    .searchbar{
+        margin-right: 3rem;
+    }
+}
+    
+@media (max-width: 1300px) {
+    .searchbar{
+        border-radius: 50%;
+        height: 3.5rem;
+        width: 3.5rem;
+        align-self: center;
+        margin-top: 1rem;
+        margin-right: 1rem;
+    }
+    .searchbar p, .searchbar .browse{
+        display: none;
+    }
+}
+
+@media (max-width:860px){
+    .rem-items, .vline{
+        display: none;
+    }
+}
+
+@media (max-width:580px){
+    .rem{
+        display: none;
+    }
+}
+
+main {
+    display: flex;
+    padding-top: 4.5rem;
+    padding-bottom: 4rem;
+    background-color: #000;
+}
+
+.sidebar{
+    height: 52.5rem;
+    width: 26rem;
+    background-color: #121212;
+    border-radius: 10px;
+    margin: 0rem 0.5rem;
+    position: fixed;
+    overflow-y: auto;
+}
+
+.sidebar .lib{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2rem 1.2rem 0.8rem;
+    margin-bottom: 2rem;
+}
+
+.sidebar .lib p{
+    margin-bottom: 0rem;
+    line-height: 1.5rem;
+}
+
+.sidebar .lib i{
+    margin-right: 0.5rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.sidebar .lib i:hover{
+    opacity: 1;
+    background-color: #2a2a2a;
+    border-radius: 50%;
+}
+
+.sidebar .playlist-cards{
+    height: 35rem;
+    width: 100%;
+    padding: 0rem 0.5rem 0.5rem;
+}
+
+.playlist-cards .card-body{
+    padding: 1rem 1.2rem;
+    margin: 0.5rem 0rem;
+    background-color: #2a2a2a;
+    border-radius: 10px;
+}
+
+.playlist-cards .card-body h5{
+    font-size: medium;
+    font-weight: 650;
+    margin-bottom: 0.3rem;
+}
+
+.playlist-cards .card-body p{
+    font-size: small;
+    font-weight: 300;
+    margin-bottom: 1.3rem;
+}
+
+.playlist-cards .card-body a{
+    border-radius: 30px;
+    font-weight: 700;
+    background-color: azure;
+    border: 1px solid azure;
+    color: #000;
+    opacity: 1;
+}
+
+.playlist-cards .card-body a:hover{
+    transition: 0.1s ease-in;
+    transform: scale(1.05);
+}
+
+.links{
+    height: 5rem;
+    width: 100%;
+    padding: 0rem 1.5rem;
+    margin: 2rem 0rem;
+}
+
+.links .link-grid a{
+    text-decoration: none;
+    color: #b3b3b3;
+    font-size: 0.75rem;
+    margin-right: 0.5rem;
+}
+
+.links #cook{
+    text-decoration: none;
+    color: white;
+    font-size: 0.8rem;
+}
+
+.links #cook:hover{
+    text-decoration: underline;
+}
+
+.lang-btn{
+    margin: 0rem 0rem 2rem;
+    padding: 0rem 1.5rem;
+}
+
+.lang-btn button{
+    background-color: transparent;
+    border: 0.2px solid azure;
+    color: white;
+    border-radius: 30px;
+    width: 6.5rem;
+    font-weight: 700;
+    font-size: small;
+    opacity: 0.8;
+}
+
+.lang-btn button:hover{
+    background-color: transparent;
+    color: white;
+    transition: 0.1s ease-in;
+    transform: scale(1.05);
+    opacity: 1;
+}
+
+@media (min-height: 950px){
+    .sidebar{
+        height: 52rem;
+    }
+    .sidebar .playlist-cards{
+        height: 30rem
+    }
+}
+
+@media (max-height: 900px){
+    .sidebar{
+        height: 43rem;
+    }
+    .sidebar .playlist-cards{
+        height: 25rem
+    }
+}
+
+@media (max-height: 833px){
+    .sidebar{
+        height: 40rem;
+    }
+    .sidebar .playlist-cards{
+        height: 20rem
+    }
+}
+
+@media (max-height: 785px){
+    .sidebar{
+        height: 35rem;
+    }
+    .sidebar .playlist-cards{
+        height: 12rem
+    }
+    .sidebar .playlist-cards .c2{
+        display: none;
+    }
+}
+
+@media (max-height: 715px){
+    .sidebar{
+        height: 32rem;
+    }
+    .sidebar .playlist-cards{
+        height: 12rem
+    }
+    .sidebar .playlist-cards .c2{
+        display: none;
+    }
+}
+
+.main-page{
+    display: block;
+    height: 100vh;
+    width: 100%;
+    margin-left: 27.5rem;
+    border-radius: 10px;
+    background-color: #121212;
+    padding: 0rem 2.5rem 5rem;
+    scroll-behavior: smooth;
+    flex: 1;
+    overflow-y: auto;
+}
+
+body::-webkit-scrollbar,
+.sidebar::-webkit-scrollbar,
+.main-page::-webkit-scrollbar{
+    display: none;
+    scroll-behavior: smooth;
+}   
+
+.main-page .row{
+    height: 23rem;
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.main-page .row .title{
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.5rem;
+}
+
+.main-page .row .title a{
+    font-size: 0.85rem;
+    color: #b3b3b3;
+    font-weight: 550;
+    text-decoration: none;
+}
+
+.main-page .row .cards{
+    display: flex;
+    justify-content: space-evenly;
+    height: 21.5rem;
+    width: 14rem;
+}
+
+.main-page .row .cards .card{
+    height: 15rem;
+    width: 12.5rem;
+    margin-top: 1rem;
+    border: 0px;
+    background-color: #121212;
+}
+
+.main-page .row .cards .card .card-body{
+    color: white;
+    padding-left: 0px;
+}
+
+.main-page .row .cards .card h6{
+    font-size: medium;
+    font-weight: 550;
+}
+
+.main-page .row .cards .card .card-body i{
+    color: #121212;
+    font-size: x-small;
+    background-color: #b3b3b3;
+    padding: 0.2rem;
+    border-radius: 3px;
+}
+
+.main-page .row .cards .card p{
+    display: inline;
+    font-size: smaller;
+    color: #b3b3b3;
+}
+
+.main-page .row .cards .card img{
+    background-size: cover;    
+}
+
+.main-page .pa .cards .card img{
+    height: 12rem;
+    border-radius: 50%;
+    background-size: cover;    
+}
+
+.img-play{
+    position: relative;
+    background-color: transparent;
+}
+
+.pa .img-play img{
+    object-fit: cover;
+}
+
+.play-btn {
+    position: absolute;
+    bottom: 0.7rem;
+    right: 0.7rem;
+    height: 3rem;
+    width: 3rem;
+    line-height: 3rem;
+    border-radius: 50%;
+    background-color: #3be477;
+    border: 1px solid transparent;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.play-btn i{
+    color: #000;
+    height: 1rem;
+    width: 1rem;
+    font-size: 1.1rem;
+}
+
+.main-page .row .cards:hover .card .play-btn {
+  display: flex;
+}
+
+.cards-scroll {
+  display: flex;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding-bottom: 1rem;
+  scroll-behavior: smooth;
+}
+
+.cards-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.cards-scroll {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.cards {
+  flex-shrink: 0;
+  width: 14rem;
+}
+
+.main-page .row .title a:hover,
+.main-page .row .cards .card h6:hover,
+.main-page .row .cards .card p:hover{
+    text-decoration: underline;
+}
+
+.main-page .row .cards:hover,
+.main-page .row .cards:hover .card .card-body,
+.main-page .row .cards:hover .card img{
+    transition: 0.1s ease-in;
+    background-color: #1f1f1f;
+}
+
+.main-page .pa .cards:hover .card .img-play{
+    transition: 0.1s ease-in;
+    background-color: #1f1f1f;
+}
+
+.main-page .row.pa,
+.main-page .row.pr,
+.main-page .row.fc,
+.main-page .row.ib {
+    height: 22rem;
+}
+
+.main-page .row:not(.ts):not(.pas) .cards:hover{
+    height: 18.5rem !important;
+    transition: 0.1s ease-in;
+    background-color: #1f1f1f;
+}
+
+.main-page .row.pa .cards .card p:hover,
+.main-page .row.pr .cards .card p:hover,
+.main-page .row.fc .cards .card p:hover,
+.main-page .row.ib .cards .card p:hover {
+  text-decoration: none !important;
+}
+
+.main-page-foot{
+    height: 24rem;
+    width: 100%;
+    margin-top: 4rem;
+}
+
+.main-page-foot hr{
+    opacity: 0.1;
+}
+
+.main-page-foot .foot-links{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.main-page-foot .foot-links .foot-links-text{
+    display: flex;
+    width: auto;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 3rem 1.5rem 0rem 0rem;
+}
+
+.main-page-foot .foot-links .foot-links-text-link{
+    width: 11rem;
+    margin: 0rem 1.5rem 2rem 0rem;
+    flex-wrap: wrap;
+}
+
+.main-page-foot .foot-links .foot-links-text-link p{
+    font-weight: 500;
+    margin-bottom: 0rem;
+    padding-bottom: 0.5rem;
+}
+
+.main-page-foot .foot-links .foot-links-text-link a{
+    display: block;
+    margin-bottom: 0rem;
+    padding-bottom: 0.5rem;
+    opacity: 0.6;
+    text-decoration: none;
+    color: white;
+}
+
+.main-page-foot .foot-links .foot-links-text-link a:hover{
+    transition: 0.1s ease-in;
+    opacity: 1;
+    text-decoration: underline;
+}
+
+.main-page-foot #copyright{
+    margin-top: 2rem;
+    opacity: 0.6;
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+.main-page-foot .foot-links .foot-links-logo{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 3rem;
+}
+
+.main-page-foot .foot-links .foot-links-logo .foot-logo-rem{
+    height: 3rem;
+    width: 3rem;
+    background-color: #1f1f1f;
+    display: inline-flex;
+    border-radius: 50%;
+    margin-right: 1rem;
+}
+
+.main-page-foot .foot-links .foot-links-logo .foot-logo-rem i{
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem;
+    font-size: large;
+    opacity: 0.7;
+}
+
+.main-page-foot .foot-links .foot-links-logo .foot-logo-rem:hover{
+    background-color: #727272;
+}
+
+.main-page-foot .foot-links .foot-links-logo .foot-logo-rem i:hover{
+    opacity: 1;
+}
+
+@media (max-width: 960px) {
+    .main-page .row .title a{
+        display: none;
+    }
+    .main-page .row .title{
+        flex-wrap: nowrap;
+    }
+}
+
+footer{
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #000;
+}
+
+.footBorder{
+    height: 4rem;
+    width: 100%;
+    margin: 0.4rem;
+    background: linear-gradient(to right, #af2896, #509bf5);
+}
+
+.footCon{
+    height: 4rem;
+    width: 100%;
+    padding: 0.6rem 1rem 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footCon button{
+    align-items: center;
+    border-radius: 30px;
+    font-weight: 650;
+    height: 3rem;
+    width: 12rem;
+    opacity: 1;
+}
+
+.footCon button:hover{
+    transition: 0.1s ease-in;
+    transform: scale(1.05);
+}
+
+@media (max-height: 550px){
+    footer{
+        display: none;
+    }
+}

@@ -1,0 +1,1171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./assets/Spotify_Logo/Logo.png" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <title>Spotify - Web Player: Music for everyone</title>
+  </head>
+  <body>
+    <header>
+      <div class="navbar">
+        <div class="logo">
+          <img src="./assets/Spotify_Logo/Logo.png" alt="Spotify logo" />
+        </div>
+        <div class="home">
+          <div class="home-icon">
+            <i class="fa-solid fa-house"></i>
+          </div>
+          <div class="searchbar">
+            <i class="fa-solid fa-magnifying-glass search"></i>
+            <p>What do you want to play?</p>
+            <i class="fa-regular fa-folder-open browse"></i>
+          </div>
+        </div>
+        <div class="rem">
+          <div class="rem-items">Premium</div>
+          <div class="rem-items">Support</div>
+          <div class="rem-items">Download</div>
+          <div class="vline">|</div>
+          <div class="rem-items2">
+            <i class="fa-solid fa-arrow-down"></i>
+            <p>Install App</p>
+          </div>
+          <div class="signup">Sign up</div>
+          <button type="button" class="btn btn-light">Log in</button>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="sidebar">
+        <div class="lib">
+          <p><strong>Your Library</strong></p>
+          <i class="fa-solid fa-plus"></i>
+        </div>
+        <div class="playlist-cards">
+          <div class="card-body">
+            <h5 class="card-title">Create your first playlist</h5>
+            <p class="card-text">It's easy, we'll help you</p>
+            <a href="#" class="btn btn-primary">Create playlist</a>
+          </div>
+          <div class="card-body c2" style="margin-top: 1.5rem">
+            <h5 class="card-title">Let's find some podcasts to follow</h5>
+            <p class="card-text">We'll keep you updated on new episodes</p>
+            <a href="#" class="btn btn-primary">Browse podcasts</a>
+          </div>
+        </div>
+        <div class="links">
+          <div class="link-grid">
+            <a href="#">Legal</a>
+            <a href="#">Safety & Privacy Center</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Cookies</a>
+            <a href="#">About Ads</a>
+            <a href="#">Accessibility</a>
+          </div>
+          <a href="#" id="cook">Cookies</a>
+        </div>
+        <div class="lang-btn">
+          <button type="button" class="btn btn-light">
+            <i class="fa-solid fa-globe"></i>
+            English
+          </button>
+        </div>
+      </div>
+      <div class="main-page">
+        <div class="row ts">
+          <div class="title">
+            <p><strong>Trending songs</strong></p>
+            <a href="#">Show all</a>
+          </div>
+          <div class="cards-scroll">
+            <div class="cards">
+              <div class="card">
+                <div class="img-play">
+                  <img
+                    src="./assets/Trending_Songs/TS1.jpeg"
+                    class="card-img-top"
+                    alt="Sahiba"
+                  />
+                  <button class="play-btn">
+                    <i class="fa-solid fa-play"></i>
+                  </button>
+                </div>
+                <div class="card-body">
+                  <h6 class="card-title">Sahiba</h6>
+                  <p class="card-text">Aditya Rikhari</p>
+                </div>
+              </div>
+            </div>
+            <div class="cards">
+              <div class="card">
+                <div class="img-play">
+                  <img
+                    src="./assets/Trending_Songs/TS2.jpeg"
+                    class="card-img-top"
+                    alt="Sahiba"
+                  />
+                  <button class="play-btn">
+                    <i class="fa-solid fa-play"></i>
+                  </button>
+                </div>
+                <div class="card-body">
+                  <h6 class="card-title">Dhun (From "Saiyaara")</h6>
+                  <p class="card-text">Mithoon</p>
+                  ,
+                  <p class="card-text">Arijit Singh</p>
+                </div>
+              </div>
+            </div>
+            <div class="cards">
+              <div class="card">
+                <div class="img-play">
+                  <img
+                    src="./assets/Trending_Songs/TS3.jpeg"
+                    class="card-img-top"
+                    alt="Sahiba"
+                  />
+                  <button class="play-btn">
+                    <i class="fa-solid fa-play"></i>
+                  </button>
+                </div>
+                <div class="card-body">
+                  <h6 class="card-title">At Peace</h6>
+                  <p class="card-text">Karan Aujla</p>
+                  ,
+                  <p class="card-text">Ikky</p>
+                </div>
+              </div>
+            </div>
+            <div class="cards">
+              <div class="card">
+                <div class="img-play">
+                  <img
+                    src="./assets/Trending_Songs/TS4.jpeg"
+                    class="card-img-top"
+                    alt="Sahiba"
+                  />
+                  <button class="play-btn">
+                    <i class="fa-solid fa-play"></i>
+                  </button>
+                </div>
+                <div class="card-body">
+                  <h6 class="card-title">Shoes Off</h6>
+                  <i class="fa-solid fa-e"></i>
+                  <p class="card-text">Prem Dhillon</p>
+                  ,
+                  <p class="card-text">Iqbal</p>
+                  ,
+                  <p class="card-text">The kidd</p>
+                </div>
+              </div>
+            </div>
+            <div class="cards">
+              <div class="card">
+                <div class="img-play">
+                  <img
+                    src="./assets/Trending_Songs/TS5.jpeg"
+                    class="card-img-top"
+                    alt="Sahiba"
+                  />
+                  <button class="play-btn">
+                    <i class="fa-solid fa-play"></i>
+                  </button>
+                </div>
+                <div class="card-body">
+                  <h6 class="card-title">Saiyaara (From "Saiyaara")</h6>
+                  <p class="card-text">Tanishk Bagchi</p>
+                  ,
+                  <p class="card-text">Faheem Abdullah</p>
+                  ,
+                  <p class="card-text">Arslan Nizami</p>
+                  ...
+                </div>
+              </div>
+            </div>
+            <div class="cards">
+              <div class="card">
+                <div class="img-play">
+                  <img
+                    src="./assets/Trending_Songs/TS6.jpeg"
+                    class="card-img-top"
+                    alt="Sahiba"
+                  />
+                  <button class="play-btn">
+                    <i class="fa-solid fa-play"></i>
+                  </button>
+                </div>
+                <div class="card-body">
+                  <h6 class="card-title">High On You</h6>
+                  <p class="card-text">Jind Universe</p>
+                </div>
+              </div>
+            </div>
+            <div class="cards">
+              <div class="card">
+                <div class="img-play">
+                  <img
+                    src="./assets/Trending_Songs/TS7.jpeg"
+                    class="card-img-top"
+                    alt="Sahiba"
+                  />
+                  <button class="play-btn">
+                    <i class="fa-solid fa-play"></i>
+                  </button>
+                </div>
+                <div class="card-body">
+                  <h6 class="card-title">Shree Hanuman Chalisa</h6>
+                  <p class="card-text">Hariharan</p>
+                </div>
+              </div>
+            </div>
+            <div class="cards">
+              <div class="card">
+                <div class="img-play">
+                  <img
+                    src="./assets/Trending_Songs/TS8.jpeg"
+                    class="card-img-top"
+                    alt="Sahiba"
+                  />
+                  <button class="play-btn">
+                    <i class="fa-solid fa-play"></i>
+                  </button>
+                </div>
+                <div class="card-body">
+                  <h6 class="card-title">Ishq Bawla | Coke Studio Bharat</h6>
+                  <p class="card-text">Dhanda Nyoliwala</p>
+                  ,
+                  <p class="card-text">Xvir Grewal</p>
+                </div>
+              </div>
+            </div>
+            <div class="cards">
+              <div class="card">
+                <div class="img-play">
+                  <img
+                    src="./assets/Trending_Songs/TS9.jpeg"
+                    class="card-img-top"
+                    alt="Sahiba"
+                  />
+                  <button class="play-btn">
+                    <i class="fa-solid fa-play"></i>
+                  </button>
+                </div>
+                <div class="card-body">
+                  <h6 class="card-title">
+                    Pal Pal Dil ke Pass - From "Blackmail"
+                  </h6>
+                  <p class="card-text">Kishore Kumar</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row pa">
+          <div class="title">
+            <p><strong>Popular Artists</strong></p>
+            <a href="#">Show all</a>
+          </div>
+          <div class="cards-scroll">
+            <div class="cards">
+              <div class="card">
+                <div class="img-play">
+                  <img
+                    src="./assets/Popular_Artists/A1.jpeg"
+                    class="card-img-top"
+                    alt="Sahiba"
+                  />
+                  <button class="play-btn">
+                    <i class="fa-solid fa-play"></i>
+                  </button>
+                </div>
+                <div class="card-body">
+                  <h6 class="card-title">Pritam</h6>
+                  <p class="card-text">Artist</p>
+                </div>
+              </div>
+            </div>
+            <div class="cards">
+              <div class="card">
+                <div class="img-play">
+                  <img
+                    src="./assets/Popular_Artists/A2.jpeg"
+                    class="card-img-top"
+                    alt="Sahiba"
+                  />
+                  <button class="play-btn">
+                    <i class="fa-solid fa-play"></i>
+                  </button>
+                </div>
+                <div class="card-body">
+                  <h6 class="card-title">A.R. Rahman</h6>
+                  <p class="card-text">Artist</p>
+                </div>
+              </div>
+            </div>
+            <div class="cards">
+              <div class="card">
+                <div class="img-play">
+                  <img
+                    src="./assets/Popular_Artists/A3.jpeg"
+                    class="card-img-top"
+                    alt="Sahiba"
+                  />
+                  <button class="play-btn">
+                    <i class="fa-solid fa-play"></i>
+                  </button>
+                </div>
+                <div class="card-body">
+                  <h6 class="card-title">Arijit Singh</h6>
+                  <p class="card-text">Artist</p>
+                </div>
+              </div>
+            </div>
+            <div class="cards">
+              <div class="card">
+                <div class="img-play">
+                  <img
+                    src="./assets/Popular_Artists/A4.jpeg"
+                    class="card-img-top"
+                    alt="Sahiba"
+                  />
+                  <button class="play-btn">
+                    <i class="fa-solid fa-play"></i>
+                  </button>
+                </div>
+                <div class="card-body">
+                  <h6 class="card-title">Sachin-Jigar</h6>
+                  <p class="card-text">Artist</p>
+                </div>
+              </div>
+            </div>
+            <div class="cards">
+              <div class="card">
+                <div class="img-play">
+                  <img
+                    src="./assets/Popular_Artists/A5.jpeg"
+                    class="card-img-top"
+                    alt="Sahiba"
+                  />
+                  <button class="play-btn">
+                    <i class="fa-solid fa-play"></i>
+                  </button>
+                </div>
+                <div class="card-body">
+                  <h6 class="card-title">Vishal-Shekhar</h6>
+                  <p class="card-text">Artist</p>
+                </div>
+              </div>
+            </div>
+            <div class="cards">
+              <div class="card">
+                <div class="img-play">
+                  <img
+                    src="./assets/Popular_Artists/A6.jpeg"
+                    class="card-img-top"
+                    alt="Sahiba"
+                  />
+                  <button class="play-btn">
+                    <i class="fa-solid fa-play"></i>
+                  </button>
+                </div>
+                <div class="card-body">
+                  <h6 class="card-title">Atif Aslam</h6>
+                  <p class="card-text">Artist</p>
+                </div>
+              </div>
+            </div>
+            <div class="cards">
+              <div class="card">
+                <div class="img-play">
+                  <img
+                    src="./assets/Popular_Artists/A7.jpeg"
+                    class="card-img-top"
+                    alt="Sahiba"
+                  />
+                  <button class="play-btn">
+                    <i class="fa-solid fa-play"></i>
+                  </button>
+                </div>
+                <div class="card-body">
+                  <h6 class="card-title">Anirudh Ravichander</h6>
+                  <p class="card-text">Artist</p>
+                </div>
+              </div>
+            </div>
+            <div class="cards">
+              <div class="card">
+                <div class="img-play">
+                  <img
+                    src="./assets/Popular_Artists/A8.jpeg"
+                    class="card-img-top"
+                    alt="Sahiba"
+                  />
+                  <button class="play-btn">
+                    <i class="fa-solid fa-play"></i>
+                  </button>
+                </div>
+                <div class="card-body">
+                  <h6 class="card-title">Udit Narayan</h6>
+                  <p class="card-text">Artist</p>
+                </div>
+              </div>
+            </div>
+            <div class="cards">
+              <div class="card">
+                <div class="img-play">
+                  <img
+                    src="./assets/Popular_Artists/A9.jpeg"
+                    class="card-img-top"
+                    alt="Sahiba"
+                  />
+                  <button class="play-btn">
+                    <i class="fa-solid fa-play"></i>
+                  </button>
+                </div>
+                <div class="card-body">
+                  <h6 class="card-title">Yo Yo Honey Singh</h6>
+                  <p class="card-text">Artist</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row pas">
+          <div class="title">
+            <p><strong>Popular albums and singles</strong></p>
+            <a href="#">Show all</a>
+          </div>
+          <div class="cards-scroll">
+            <div class="cards">
+              <div class="card">
+                <div class="img-play">
+                  <img
+                    src="./assets/Popular_albums_and_singles/PAS1.jpeg"
+                    class="card-img-top"
+                    alt="Sahiba"
+                  />
+                  <button class="play-btn">
+                    <i class="fa-solid fa-play"></i>
+                  </button>
+                </div>
+                <div class="card-body">
+                  <h6 class="card-title">Aashiqui 2</h6>
+                  <p class="card-text">Mithoon</p>
+                  ,
+                  <p class="card-text">Ankit Tiwari</p>
+                  ,
+                  <p class="card-text">Jeet Gannguli</p>
+                </div>
+              </div>
+            </div>
+            <div class="cards">
+              <div class="card">
+                <div class="img-play">
+                  <img
+                    src="./assets/Popular_albums_and_singles/PAS2.jpeg"
+                    class="card-img-top"
+                    alt="Sahiba"
+                  />
+                  <button class="play-btn">
+                    <i class="fa-solid fa-play"></i>
+                  </button>
+                </div>
+                <div class="card-body">
+                  <h6 class="card-title">Yeh Jawaani Hai Deewani</h6>
+                  <p class="card-text">Pritam</p>
+                </div>
+              </div>
+            </div>
+            <div class="cards">
+              <div class="card">
+                <div class="img-play">
+                  <img
+                    src="./assets/Popular_albums_and_singles/PAS3.jpeg"
+                    class="card-img-top"
+                    alt="Sahiba"
+                  />
+                  <button class="play-btn">
+                    <i class="fa-solid fa-play"></i>
+                  </button>
+                </div>
+                <div class="card-body">
+                  <h6 class="card-title">
+                    Sanam Teri Kasam - Original Motion...
+                  </h6>
+                  <p class="card-text">Himesh Reshammiya</p>
+                  ,
+                  <p class="card-text">Sameer Anjaan</p>
+                  ....
+                  <p class="card-text"></p>
+                </div>
+              </div>
+            </div>
+            <div class="cards">
+              <div class="card">
+                <div class="img-play">
+                  <img
+                    src="./assets/Popular_albums_and_singles/PAS4.jpeg"
+                    class="card-img-top"
+                    alt="Sahiba"
+                  />
+                  <button class="play-btn">
+                    <i class="fa-solid fa-play"></i>
+                  </button>
+                </div>
+                <div class="card-body">
+                  <h6 class="card-title">Finding Her</h6>
+                  <p class="card-text">Kushagra</p>
+                  ,
+                  <p class="card-text">Bharath</p>
+                  ,
+                  <p class="card-text">Saaheal</p>
+                </div>
+              </div>
+            </div>
+            <div class="cards">
+              <div class="card">
+                <div class="img-play">
+                  <img
+                    src="./assets/Popular_albums_and_singles/PAS5.jpeg"
+                    class="card-img-top"
+                    alt="Sahiba"
+                  />
+                  <button class="play-btn">
+                    <i class="fa-solid fa-play"></i>
+                  </button>
+                </div>
+                <div class="card-body">
+                  <h6 class="card-title">Young G.O.A.T</h6>
+                  <p class="card-text">Cheema Y</p>
+                  ,
+                  <p class="card-text">Gur Sidhu</p>
+                </div>
+              </div>
+            </div>
+            <div class="cards">
+              <div class="card">
+                <div class="img-play">
+                  <img
+                    src="./assets/Popular_albums_and_singles/PAS6.jpeg"
+                    class="card-img-top"
+                    alt="Sahiba"
+                  />
+                  <button class="play-btn">
+                    <i class="fa-solid fa-play"></i>
+                  </button>
+                </div>
+                <div class="card-body">
+                  <h6 class="card-title">Raanjhan (From "Do Patti")</h6>
+                  <p class="card-text">Sachet-Parampara</p>
+                  ,
+                  <p class="card-text">Parampara Tandon</p>
+                  ...
+                </div>
+              </div>
+            </div>
+            <div class="cards">
+              <div class="card">
+                <div class="img-play">
+                  <img
+                    src="./assets/Popular_albums_and_singles/PAS7.jpeg"
+                    class="card-img-top"
+                    alt="Sahiba"
+                  />
+                  <button class="play-btn">
+                    <i class="fa-solid fa-play"></i>
+                  </button>
+                </div>
+                <div class="card-body">
+                  <h6 class="card-title">Ultimate Love Songs - Arijit Singh</h6>
+                  <p class="card-text">Arijit Singh</p>
+                </div>
+              </div>
+            </div>
+            <div class="cards">
+              <div class="card">
+                <div class="img-play">
+                  <img
+                    src="./assets/Popular_albums_and_singles/PAS8.jpeg"
+                    class="card-img-top"
+                    alt="Sahiba"
+                  />
+                  <button class="play-btn">
+                    <i class="fa-solid fa-play"></i>
+                  </button>
+                </div>
+                <div class="card-body">
+                  <h6 class="card-title">Making Memories</h6>
+                  <p class="card-text">Karan Aujla</p>
+                  ,
+                  <p class="card-text">Ikky</p>
+                </div>
+              </div>
+            </div>
+            <div class="cards">
+              <div class="card">
+                <div class="img-play">
+                  <img
+                    src="./assets/Popular_albums_and_singles/PAS9.jpeg"
+                    class="card-img-top"
+                    alt="Sahiba"
+                  />
+                  <button class="play-btn">
+                    <i class="fa-solid fa-play"></i>
+                  </button>
+                </div>
+                <div class="card-body">
+                  <h6 class="card-title">Moosetape</h6>
+                  <p class="card-text">Sidhu Moose Wala</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <br><br>
+        <div class="row pr">
+          <div class="title">
+            <p><strong>Popular Radio</strong></p>
+            <a href="#">Show all</a>
+          </div>
+          <div class="cards-scroll">
+            <div class="cards">
+              <div class="card">
+                <div class="img-play">
+                  <img
+                    src="./assets/Popular_radio/PR1.jpeg"
+                    class="card-img-top"
+                    alt="Sahiba"
+                  />
+                  <button class="play-btn">
+                    <i class="fa-solid fa-play"></i>
+                  </button>
+                </div>
+                <div class="card-body">
+                  <p class="card-text">
+                    With Sachin-Jigar, Atif Aslam, Shaarib Toshi and...
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="cards">
+              <div class="card">
+                <div class="img-play">
+                  <img
+                    src="./assets/Popular_radio/PR2.jpeg"
+                    class="card-img-top"
+                    alt="Sahiba"
+                  />
+                  <button class="play-btn">
+                    <i class="fa-solid fa-play"></i>
+                  </button>
+                </div>
+                <div class="card-body">
+                  <p class="card-text">
+                    With Pritam, Mustafa Zahid, Atif Aslam and...
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="cards">
+              <div class="card">
+                <div class="img-play">
+                  <img
+                    src="./assets/Popular_radio/PR3.jpeg"
+                    class="card-img-top"
+                    alt="Sahiba"
+                  />
+                  <button class="play-btn">
+                    <i class="fa-solid fa-play"></i>
+                  </button>
+                </div>
+                <div class="card-body">
+                  <p class="card-text">
+                    With Atif Aslam, A.R. Rahman, Ajay-Atul and...
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="cards">
+              <div class="card">
+                <div class="img-play">
+                  <img
+                    src="./assets/Popular_radio/PR4.jpeg"
+                    class="card-img-top"
+                    alt="Sahiba"
+                  />
+                  <button class="play-btn">
+                    <i class="fa-solid fa-play"></i>
+                  </button>
+                </div>
+                <div class="card-body">
+                  <p class="card-text">
+                    With Kumar Sanu, Vinod Rathod, Udit Narayan and...
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="cards">
+              <div class="card">
+                <div class="img-play">
+                  <img
+                    src="./assets/Popular_radio/PR5.jpeg"
+                    class="card-img-top"
+                    alt="Sahiba"
+                  />
+                  <button class="play-btn">
+                    <i class="fa-solid fa-play"></i>
+                  </button>
+                </div>
+                <div class="card-body">
+                  <p class="card-text">
+                    With Karan Aujla, Shubh, Sidhu Moose Wala and...
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="cards">
+              <div class="card">
+                <div class="img-play">
+                  <img
+                    src="./assets/Popular_radio/PR6.jpeg"
+                    class="card-img-top"
+                    alt="Sahiba"
+                  />
+                  <button class="play-btn">
+                    <i class="fa-solid fa-play"></i>
+                  </button>
+                </div>
+                <div class="card-body">
+                  <p class="card-text">
+                    With G.V. Prakash, Hariharan, Yuvan and...
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="cards">
+              <div class="card">
+                <div class="img-play">
+                  <img
+                    src="./assets/Popular_radio/PR7.jpeg"
+                    class="card-img-top"
+                    alt="Sahiba"
+                  />
+                  <button class="play-btn">
+                    <i class="fa-solid fa-play"></i>
+                  </button>
+                </div>
+                <div class="card-body">
+                  <p class="card-text">
+                    With Badshah, Guru Randhawa, Harrdy and...
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="cards">
+              <div class="card">
+                <div class="img-play">
+                  <img
+                    src="./assets/Popular_radio/PR8.jpeg"
+                    class="card-img-top"
+                    alt="Sahiba"
+                  />
+                  <button class="play-btn">
+                    <i class="fa-solid fa-play"></i>
+                  </button>
+                </div>
+                <div class="card-body">
+                  <p class="card-text">
+                    With Shubh, AP Dhillon, JERRY and more
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="cards">
+              <div class="card">
+                <div class="img-play">
+                  <img
+                    src="./assets/Popular_radio/PR9.jpeg"
+                    class="card-img-top"
+                    alt="Sahiba"
+                  />
+                  <button class="play-btn">
+                    <i class="fa-solid fa-play"></i>
+                  </button>
+                </div>
+                <div class="card-body">
+                  <p class="card-text">
+                    With Mukesh, Hemant Kumar, Lata Mangeshkar...
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row fc">
+          <div class="title">
+            <p><strong>Featured Charts</strong></p>
+            <a href="#">Show all</a>
+          </div>
+          <div class="cards-scroll">
+            <div class="cards">
+              <div class="card">
+                <div class="img-play">
+                  <img
+                    src="./assets/Featured_Charts/FC1.jpg"
+                    class="card-img-top"
+                    alt="Sahiba"
+                  />
+                  <button class="play-btn">
+                    <i class="fa-solid fa-play"></i>
+                  </button>
+                </div>
+                <div class="card-body">
+                  <p class="card-text">
+                    Your weekly update of the most played tracks right...
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="cards">
+              <div class="card">
+                <div class="img-play">
+                  <img
+                    src="./assets/Featured_Charts/FC2.jpg"
+                    class="card-img-top"
+                    alt="Sahiba"
+                  />
+                  <button class="play-btn">
+                    <i class="fa-solid fa-play"></i>
+                  </button>
+                </div>
+                <div class="card-body">
+                  <p class="card-text">
+                    Your weekly update of the most played tracks right...
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="cards">
+              <div class="card">
+                <div class="img-play">
+                  <img
+                    src="./assets/Featured_Charts/FC3.jpg"
+                    class="card-img-top"
+                    alt="Sahiba"
+                  />
+                  <button class="play-btn">
+                    <i class="fa-solid fa-play"></i>
+                  </button>
+                </div>
+                <div class="card-body">
+                  <p class="card-text">
+                    Your daily update of the most played tracks right...
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="cards">
+              <div class="card">
+                <div class="img-play">
+                  <img
+                    src="./assets/Featured_Charts/FC4.jpg"
+                    class="card-img-top"
+                    alt="Sahiba"
+                  />
+                  <button class="play-btn">
+                    <i class="fa-solid fa-play"></i>
+                  </button>
+                </div>
+                <div class="card-body">
+                  <p class="card-text">
+                    Your daily update of the most played tracks right...
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="cards">
+              <div class="card">
+                <div class="img-play">
+                  <img
+                    src="./assets/Featured_Charts/FC5.jpg"
+                    class="card-img-top"
+                    alt="Sahiba"
+                  />
+                  <button class="play-btn">
+                    <i class="fa-solid fa-play"></i>
+                  </button>
+                </div>
+                <div class="card-body">
+                  <p class="card-text">
+                    Your daily update of the most viral tracks right...
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="cards">
+              <div class="card">
+                <div class="img-play">
+                  <img
+                    src="./assets/Featured_Charts/FC6.jpg"
+                    class="card-img-top"
+                    alt="Sahiba"
+                  />
+                  <button class="play-btn">
+                    <i class="fa-solid fa-play"></i>
+                  </button>
+                </div>
+                <div class="card-body">
+                  <p class="card-text">
+                    Your daily update of the most viral tracks right...
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row ib">
+          <div class="title">
+            <p><strong>Popular albums and singles</strong></p>
+            <a href="#">Show all</a>
+          </div>
+          <div class="cards-scroll">
+            <div class="cards">
+              <div class="card">
+                <div class="img-play">
+                  <img
+                    src="./assets/India's_Best/IB1.jpeg"
+                    class="card-img-top"
+                    alt="Sahiba"
+                  />
+                  <button class="play-btn">
+                    <i class="fa-solid fa-play"></i>
+                  </button>
+                </div>
+                <div class="card-body">
+                  <p class="card-text">Hottest Hindi Music that India is listening to...</p>
+                </div>
+              </div>
+            </div>
+            <div class="cards">
+              <div class="card">
+                <div class="img-play">
+                  <img
+                    src="./assets/India's_Best/IB2.jpeg"
+                    class="card-img-top"
+                    alt="Sahiba"
+                  />
+                  <button class="play-btn">
+                    <i class="fa-solid fa-play"></i>
+                  </button>
+                </div>
+                <div class="card-body">
+                  <p class="card-text">Hottest tracks from your favourite I-Pop Icons...</p>
+                </div>
+              </div>
+            </div>
+            <div class="cards">
+              <div class="card">
+                <div class="img-play">
+                  <img
+                    src="./assets/India's_Best/IB3.jpeg"
+                    class="card-img-top"
+                    alt="Sahiba"
+                  />
+                  <button class="play-btn">
+                    <i class="fa-solid fa-play"></i>
+                  </button>
+                </div>
+                <div class="card-body">
+                  <p class="card-text">Ultimate 101 Punjabi Hits with Parmish Verma</p>
+                  ....
+                  <p class="card-text"></p>
+                </div>
+              </div>
+            </div>
+            <div class="cards">
+              <div class="card">
+                <div class="img-play">
+                  <img
+                    src="./assets/India's_Best/IB4.jpeg"
+                    class="card-img-top"
+                    alt="Sahiba"
+                  />
+                  <button class="play-btn">
+                    <i class="fa-solid fa-play"></i>
+                  </button>
+                </div>
+                <div class="card-body">
+                  <p class="card-text">Bollywood Central, jab bajenge toh seedhe dil ke...</p>
+                </div>
+              </div>
+            </div>
+            <div class="cards">
+              <div class="card">
+                <div class="img-play">
+                  <img
+                    src="./assets/India's_Best/IB5.jpeg"
+                    class="card-img-top"
+                    alt="Sahiba"
+                  />
+                  <button class="play-btn">
+                    <i class="fa-solid fa-play"></i>
+                  </button>
+                </div>
+                <div class="card-body">
+                  <p class="card-text">India's Rap Scene, Cover - Emiway Bantai</p>
+                </div>
+              </div>
+            </div>
+            <div class="cards">
+              <div class="card">
+                <div class="img-play">
+                  <img
+                    src="./assets/India's_Best/IB6.jpeg"
+                    class="card-img-top"
+                    alt="Sahiba"
+                  />
+                  <button class="play-btn">
+                    <i class="fa-solid fa-play"></i>
+                  </button>
+                </div>
+                <div class="card-body">
+                  <p class="card-text">Finest collection of Tamil Music from the past 10...</p>
+                  ...
+                </div>
+              </div>
+            </div>
+            <div class="cards">
+              <div class="card">
+                <div class="img-play">
+                  <img
+                    src="./assets/India's_Best/IB7.jpeg"
+                    class="card-img-top"
+                    alt="Sahiba"
+                  />
+                  <button class="play-btn">
+                    <i class="fa-solid fa-play"></i>
+                  </button>
+                </div>
+                <div class="card-body">
+                  <p class="card-text">Most exciting artists from the Indian Indie...</p>
+                </div>
+              </div>
+            </div>
+            <div class="cards">
+              <div class="card">
+                <div class="img-play">
+                  <img
+                    src="./assets/India's_Best/IB8.jpeg"
+                    class="card-img-top"
+                    alt="Sahiba"
+                  />
+                  <button class="play-btn">
+                    <i class="fa-solid fa-play"></i>
+                  </button>
+                </div>
+                <div class="card-body">
+                  <p class="card-text">Biggest Haryanvi hits from the last 10 years...</p>
+                </div>
+              </div>
+            </div>
+            <div class="cards">
+              <div class="card">
+                <div class="img-play">
+                  <img
+                    src="./assets/India's_Best/IB9.jpeg"
+                    class="card-img-top"
+                    alt="Sahiba"
+                  />
+                  <button class="play-btn">
+                    <i class="fa-solid fa-play"></i>
+                  </button>
+                </div>
+                <div class="card-body">
+                  <p class="card-text">The finest set of Telugu music from the past 10...</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="main-page-foot">
+          <hr>
+          <div class="foot-links">
+            <div class="foot-links-text">
+              <div class="foot-links-text-link">
+                <p><strong>Company</strong></p>
+                <a href="#">About</a>
+                <a href="#">Jobs</a>
+                <a href="#">For the Record</a>
+              </div>
+              <div class="foot-links-text-link">
+                <p><strong>Communities</strong></p>
+                <a href="#">For Artists</a>
+                <a href="#">Developers</a>
+                <a href="#">Advertising</a>
+                <a href="#">Investors</a>
+                <a href="#">Vendors</a>
+              </div>
+              <div class="foot-links-text-link">
+                <p><strong>Useful Links</strong></p>
+                <a href="#">Support</a>
+                <a href="#">Free Mobile App</a>
+              </div>
+              <div class="foot-links-text-link">
+                <p><strong>Spotify Plans</strong></p>
+                <a href="#">Premium Individal</a>
+                <a href="#">Premium Duo</a>
+                <a href="#">Premium Family</a>
+                <a href="#">Premium Student</a>
+                <a href="#">Spotify Free</a>
+              </div>
+            </div>
+            <div class="foot-links-logo">
+              <div class="foot-logo-rem">
+                <i class="fa-brands fa-instagram"></i>
+              </div>
+              <div class="foot-logo-rem">
+                <i class="fa-brands fa-x-twitter"></i>
+              </div>
+              <div class="foot-logo-rem">
+                <i class="fa-brands fa-facebook"></i>
+              </div>
+            </div>
+          </div>
+          <hr>
+          <p id="copyright">&copy; 2025 Spotify AB</p>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="footBorder">
+        <div class="footCon">
+          <div class="footP">
+            <strong>Preview of Spotify</strong><br />
+            Sign up to get unlimited songs and podcasts with occasional ads. No
+            credit card needed.
+          </div>
+          <button type="button" class="btn btn-light">Sign up for free</button>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
